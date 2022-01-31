@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Hangman</title>
+        <link rel="icon" href="hangman.ico" type="imge/x-icon">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+    </head>
+
+    <body background="vecteezy_abstract-blue-minimal-geometric-background_.jpg">  
+        <header>
+            <div class="container">
+                <h1 class="title">Hangman</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="container">
+                <button id="btn-game" class="button-game">Start Game</button>
+            </section>
+
+            <section class="container-add"> 
+                <span id="error-add" class="invisible">repeated word</span>
+                <input id="word" name="word" type="text" placeholder="Write a new word" class="new-word">
+                <button id="btn-add" class="button-add">Add New Word</button>
+            
+            </section>
+
+            <section class="hangman-draw">
+
+                <canvas width="1000" height="590"></canvas>
+                <button id="btn-mainmenu" class="button-mainmenu">Main Menu</button>
+
+            </section>
+
+        </main>
+
+    <script src="js/AddWord.js"></script>
+    <script src="js/Game.js"></script>
+    </body>
+
+</html>
